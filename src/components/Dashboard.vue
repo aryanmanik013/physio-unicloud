@@ -1,26 +1,30 @@
 <template>
   <div class="row">
-    <MDBNavbar
-      expand="md"
-      style="background: #1e1e2d !important"
-      light
-      bg="light"
-      container
-      class="header-hide"
-    >
-      <MDBNavbarBrand href="#" class="text-white">View User </MDBNavbarBrand>
-      <MDBNavbarToggler target="#navbarText"></MDBNavbarToggler>
-      <MDBNavbarNav collapse="navbarText">
-        <!-- <MDBNavbarItem href="#"> Home </MDBNavbarItem> -->
-        <MDBNavbarItem @click="aboutPage()" style="margin-right: 8px"
-          >About Us</MDBNavbarItem
-        >
-        <MDBNavbarItem @click="usersPage()">Users</MDBNavbarItem>
-        <template v-slot:contentRight>
-          <span class="navbar-text"> Navbar text with an inline element </span>
-        </template>
-      </MDBNavbarNav>
-    </MDBNavbar>
+    <div class="col-md-12">
+      <MDBNavbar
+        expand="md"
+        style="background: #1e1e2d !important"
+        light
+        bg="light"
+        container
+        class="header-hide"
+      >
+        <MDBNavbarBrand href="#" class="text-white">View User </MDBNavbarBrand>
+        <MDBNavbarToggler target="#navbarText"></MDBNavbarToggler>
+        <MDBNavbarNav collapse="navbarText">
+          <!-- <MDBNavbarItem href="#"> Home </MDBNavbarItem> -->
+          <MDBNavbarItem @click="aboutPage()" style="margin-right: 8px"
+            >About Us</MDBNavbarItem
+          >
+          <MDBNavbarItem @click="usersPage()">Users</MDBNavbarItem>
+          <template v-slot:contentRight>
+            <span class="navbar-text">
+              Navbar text with an inline element
+            </span>
+          </template>
+        </MDBNavbarNav>
+      </MDBNavbar>
+    </div>
 
     <div class="col-md-4 text-white mt-2">
       <MDBCard style="background: #1e1e2d">
@@ -253,6 +257,8 @@
         <b-tab title="Events & Logs">
           <h1>Coming Soon</h1>
         </b-tab>
+
+        <b-tab title="Actions"> </b-tab>
       </b-tabs>
 
       <!-- </div> -->
@@ -429,8 +435,8 @@ export default {
   .text-muted {
     font-size: 10px;
   }
-  /* .hide-on-mobile{
-    display: none;
-  } */
+}
+.list-group-item {
+  background: white !important;
 }
 </style>
