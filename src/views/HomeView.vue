@@ -159,14 +159,20 @@
                                   >
                                     <MDBListGroup class="mt-3" light>
                                       <h6>More Dashboard</h6>
-                                      <div>Logistics</div>
-                                      <div>Website Analytics</div>
-                                      <div>Finance Performance</div>
-                                      <div>Store Analytics</div>
-                                      <div>Social</div>
-                                      <div>Crypto</div>
-                                      <div>School</div>
-                                      <div>Podcast</div>
+                                      <div class="right-align">Logistics</div>
+                                      <div class="right-align">
+                                        Website Analytics
+                                      </div>
+                                      <div class="right-align">
+                                        Finance Performance
+                                      </div>
+                                      <div class="right-align">
+                                        Store Analytics
+                                      </div>
+                                      <div class="right-align">Social</div>
+                                      <div class="right-align">Crypto</div>
+                                      <div class="right-align">School</div>
+                                      <div class="right-align">Podcast</div>
                                     </MDBListGroup>
                                   </div>
                                 </div>
@@ -349,6 +355,10 @@ li {
   list-style: none;
 }
 li nav {
+  cursor: pointer;
+}
+
+.right-align {
   cursor: pointer;
 }
 </style>
